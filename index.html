@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 3 Quetzalcoatl</title>
+    <style>
+       
+        header {
+            background-color: #000000; 
+            color: #ff0000; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #000000; 
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav li a {
+            color: #ffffff; /*MENU PRINCIPAL*/ 
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000000; 
+            padding: 10px;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        article {
+            background-color: #000000; 
+            color: #948d8d; /*TEXTO DE LOS SUBMENUS*/
+            padding: 20px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        article h2 {
+            color: #ffffff; /*TITULOS*/
+
+         }
+         
+        article#manada h2 {
+            color: yellow;
+        }
+
+      
+        article#tropa h2 {
+            color: rgb(0, 170, 0);
+        }
+
+        
+        article#comunidad h2 {
+            color: blue;
+        }
+
+        
+        article#clan\ rover h2 {
+            color: rgb(255, 0, 0);
+        } 
+
+        footer {
+            background-color: #000000; 
+            color: #FFF; 
+            text-align: center;
+            padding: 10px;
+        }
+
+       
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        a {
+            text-decoration: none; 
+            color: #3b3b3b; /
+        }
+
+        
+        a:hover {
+            color: #FF0000; /
+        }
+
+        
+        ul {
+            list-style: none; 
+            padding: 0; 
+        }
+
+       
+        li { 
+            margin: 5px 0; 
+         }
+        /* Estilos para cada sección */
+        .manada ul li a {
+            color: yellow; 
+        }
+
+        .tropa ul li a {
+            color: rgb(0, 170, 0); 
+        }
+
+        .comunidad ul li a {
+            color: blue; 
+        }
+
+        .clan-rover ul li a {
+            color: rgb(255, 0, 0); 
+        }
+        a {
+            text-decoration: none; /* Quitar subrayado de los enlaces */
+            color: #388074; /* COLORES DE ENLACES (TITULO, WHATSAPP, FACEBOOK, INSTAGRAM) */
+        }
+
+        /* Estilos para los enlaces cuando están en estado hover (cuando pasas el mouse sobre ellos) */
+        a:hover {
+            color: #388074; /* ESTILOS PARA EL mouse */
+        }
+     ul {
+            list-style: none; 
+            padding: 0; 
+        }
+
+        
+        li {
+            margin: 5px 0; 
+        }
+
+        
+        .manada a {
+            color: #fffb00;
+        }
+
+        .tropa a {
+            color:rgb(0, 170, 0); 
+        }
+
+        .comunidad a {
+            color: #0000FF; 
+        }
+
+        .clan-rover a {
+            color: #ff0000; 
+        }
+        body {
+        background-color: rgb(0, 0, 0);
+        text-align: justify;
+    }
+
+    /* Estilos para los títulos y subtítulos */
+    article h2 {
+        text-align: center;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#" onclick="mostrarSeccion('que-somos')" class="no-decoration">Grupo 3 Quetzalcoatl</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('que-somos')">¿Que somos?</a></li>
+            <li><a href="#" onclick="mostrarSeccion('nuestra historia')">Nuestra Historia</a></li>
+            <li><a href="#" onclick="mostrarSeccion('nuestras redes')">Nuestras Redes</a></li>
+            <li>
+                <a href="#">Secciones.</a>
+                <ul>
+                    <li class="manada"><a href="#" onclick="mostrarSeccion('manada')">Manada</a></li>
+                    <li class="tropa"><a href="#" onclick="mostrarSeccion('tropa')">Tropa</a></li>
+                    <li class="comunidad"><a href="#" onclick="mostrarSeccion('comunidad')">Comunidad</a></li>
+                    <li class="clan-rover"><a href="#" onclick="mostrarSeccion('clan rover')">Clan Rover</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        
+    </main>
+    
+    
+    <main>
+        <article id="que-somos">
+            <h2>¿Qué es ser scout?</h2>
+            <p>Ser scout es formar parte de un movimiento educativo mundial, el cual busca desarrollar habilidades y valores en los jóvenes para que sean ciudadanos comprometidos, responsables, solidarios y respetuosos.</p>
+            <h2>Origen del Movimiento Scout</h2>
+            <p>El movimiento scout fue fundado por <span style="color: #1565C0;">Lord Robert Baden-Powell</span> en 1907. Baden-Powell fue un militar británico que adaptó sus experiencias en el ejército para crear un sistema de educación no formal enfocado en la naturaleza y el trabajo en equipo.</p>
+            <h2>El scoutismo llega a México</h2>
+            <p>El movimiento scout llegó a México en 1920, cuando un grupo de jóvenes mexicanos asistió a un campamento scout en Estados Unidos. A partir de ese momento, se establecieron los primeros grupos scouts en México, y el movimiento ha crecido y prosperado desde entonces.</p>
+            <h2>Que es un Equipo Scout</h2>
+            <p>Un equipo scout es un grupo más pequeño dentro de la comunidad, generalmente compuesto por jóvenes de la misma edad o etapa de desarrollo. Los equipos scout trabajan juntos en actividades, juegos y proyectos para fortalecer el trabajo en equipo y fomentar el compañerismo.</p>
+            
+        </article>
+        <article id="nuestra historia">
+            <h2>Nuestra Historia</h2>
+            <p></p>
+
+        </article>
+        
+        <article id="manada">
+            <h2>Manada de Lobatos</h2>
+            <p> Una "manada de lobatos" se refiere a un grupo de niños y niñas que participan en el movimiento scout, específicamente en la sección de lobatos. El término "lobatos" es utilizado en varios países para designar a los miembros más jóvenes de los scouts. Por ejemplo, en el Movimiento Scout en España, la sección de lobatos está destinada a <span style="color: #ffee00;">niños y niñas de entre 8 y 11 años.</span>
+
+                La sección de lobatos es una etapa temprana dentro del movimiento scout donde los niños y niñas participan en diversas actividades y juegos educativos que promueven el trabajo en equipo, el desarrollo personal, la responsabilidad, la autonomía y la vida en la naturaleza. Los lobatos aprenden a través de actividades lúdicas y prácticas, y generalmente se agrupan en "manadas" que son dirigidas por un equipo de líderes adultos voluntarios, conocidos como "akelas".
+                
+                Las manadas de lobatos suelen adoptar nombres y temas que hacen referencia a la naturaleza, como manadas de lobatos lobos, manadas de lobatos tigres, etc. Cada manada tiene su propio programa de actividades y objetivos que se adaptan a la edad y capacidad de los niños y niñas en esa etapa.
+                
+                Las actividades en una manada de lobatos pueden incluir juegos al aire libre, excursiones, acampadas, manualidades, proyectos de servicio comunitario, juegos de orientación, aprendizaje de habilidades de supervivencia básicas, entre otros.
+                
+                El objetivo principal de las manadas de lobatos es fomentar el desarrollo integral de los niños y niñas en un ambiente seguro y divertido, inculcando valores como el respeto por la naturaleza y los demás, la responsabilidad personal y la cooperación. A medida que los lobatos crecen, pueden avanzar a las secciones scout más mayores, como la tropa scout o el clan, según el sistema de progresión establecido en cada país o asociación scout.</p>
+        
+        </article>
+        <article id="tropa"> 
+        <h2>Tropa</h2>
+        <p> Una "tropa de scouts" se refiere a un grupo de niños y niñas que forman parte del movimiento scout y que se encuentran en una etapa más avanzada que los lobatos. La sección de tropa está diseñada para <span style="color: #15b100;">jóvenes entre 11 y 14 años, aproximadamente</span>, aunque la edad exacta puede variar según el país y la asociación scout.
+
+            La tropa de scouts es una etapa en la que los jóvenes exploran y desarrollan habilidades y valores fundamentales mediante actividades al aire libre, juegos, aventuras y aprendizaje práctico. Los miembros de la tropa son guiados por líderes adultos voluntarios, conocidos como "scouters" o "scouters de tropa", quienes supervisan y organizan las actividades del grupo.
+            
+            El principal objetivo de la tropa de scouts es fomentar el crecimiento personal y el desarrollo de habilidades en los jóvenes. A través de actividades como acampadas, excursiones, juegos de orientación, proyectos de servicio comunitario y actividades al aire libre, los scouts aprenden a trabajar en equipo, a tomar decisiones, a ser responsables, a desarrollar liderazgo y a respetar la naturaleza y el entorno.
+            
+            La tropa de scouts suele estar dividida en patrullas, que son grupos más pequeños dentro de la tropa, cada uno liderado por un scout más experimentado, conocido como "patrullero". Los patrulleros son scouts más mayores que asumen un papel de liderazgo y ayudan a guiar a los demás miembros de la patrulla.
+            
+            A medida que los scouts avanzan en edad, algunos pueden optar por continuar su progreso en el movimiento scout y pasar a la siguiente sección, como la "Unidad Rover" o "Clan Scout" en algunos países. La idea es que los jóvenes vayan asumiendo mayores responsabilidades y desafíos a medida que van creciendo y desarrollándose en el movimiento scout.</p>
+        </article>        
+        <article id="comunidad">
+            <h2>Comunidad</h2>
+            <p>En el movimiento scout, una comunidad es un grupo de jóvenes scouts que se unen para compartir experiencias, aprender juntos y desarrollar amistades duraderas. Las comunidades suelen estar formadas por varios equipos scout. Es una Comunidad o familia amplia que tiene como propósito que <span style="color: #0000FF;">los jóvenes de 15 a 18 años</span> , VIVAN SU PROPIA AVENTURA; mediante una visión compartida que se fundamenta en la superación personal de los jóvenes de acuerdo con los desafíos inherentes de su edad.</p>
+            <h2>Equipos</h2>
+            <p>El Grupo 3 Quetzalcoatl cuenta con 3 equipos de la comunidad</p>
+            <h2>Equipo Ahuitzotl</h2>
+            <p></p> 
+            <h2>Equipo Aztlan</h2>
+            <p></p>
+            <h2>Equipo Teocali</h2>
+            <p></p>
+        </article>
+        /* las etiquetas "p" no tendra informacion */
+        <article id="clan rover"> 
+        <h2>Clan Rover</h2>
+        <p>  Un "Clan de Rover Scout" o simplemente "Clan Scout" es la última etapa dentro del movimiento scout destinada a jóvenes adultos, <span style="color: #eb0000;">generalmente de 18 a 26 años.</span> Los Rovers son scouts que han pasado por las etapas previas del movimiento, como la manada de lobatos y la tropa de scouts, y han alcanzado la edad en la que se convierten en adultos jóvenes.
+             El Clan Scout ofrece a estos jóvenes una oportunidad para continuar su desarrollo personal y participar en actividades más desafiantes y complejas, a menudo centradas en el servicio comunitario, la aventura y el liderazgo. A diferencia de las secciones anteriores, el Clan Scout tiene una estructura más flexible y ofrece a sus miembros una mayor autonomía para diseñar y llevar a cabo sus propias actividades.
+             Los objetivos principales del Clan Scout son:
+             Desarrollo personal: Fomentar el crecimiento personal, la autoestima, el respeto a los demás y la confianza en sí mismos.
+             Servicio a la comunidad: Participar en proyectos de servicio y contribuir positivamente a la sociedad.
+             Aventura y exploración: Realizar actividades al aire libre, viajes, campamentos de mayor envergadura y retos que les permitan enfrentar nuevos desafíos y desarrollar habilidades.
+             Liderazgo: Fomentar el liderazgo y la responsabilidad a través de la toma de decisiones y la organización de actividades.
+             Los Rovers son guiados por un consejo de líderes jóvenes llamado "Equipo de Animación de Clan" o simplemente "Equipo de Clan". Estos líderes son elegidos por sus compañeros Rovers y se encargan de coordinar y facilitar las actividades del Clan Scout.
+             El Clan Scout es una experiencia enriquecedora para los jóvenes adultos que desean continuar involucrados en el movimiento scout, manteniendo el espíritu de servicio, amistad y valores que caracterizan al escultismo. Además, muchos Rovers también se implican como voluntarios para apoyar y liderar actividades en secciones más jóvenes, compartiendo su experiencia y conocimiento con los nuevos miembros del movimiento.</p>
+        </article>
+       
+        <article id="nuestras redes">
+            <h2 style="color: #ffffff;">Nuestras Redes</h2>
+
+            <p><span style="color: #ffffff;">Número de WhatsApp:</span></p>
+            <a href="https://wa.me/5525338668" target="_blank">WhatsApp</a>
+            <p><span style="color: #ffffff;">Encuéntranos en Facebook:</span></p>
+        <a href="https://www.facebook.com/profile.php?id=100083019266918" target="_blank">Facebook</a>
+        <p><span style="color: #ffffff;">Encuéntranos en Instagram:</span></p>
+        <a href="https://www.instagram.com/3quetzalcoalt.gam/" target="_blank">Instagram</a>
+
+            
+            <p>Para aclaraciones, envía un correo electrónico a: <a href="mailto:iglesiaseduardo65@gmail.com">iglesiaseduardo65@gmail.com</a></p>
+        </article>
+    </main>
+    <footer>
+        <p>Derechos de autor &copy; 2023 - Eduardo Iglesias</p>
+            
+    </footer>
+
+    <script>
+        
+        function mostrarSeccion(seccion) {
+            const secciones = document.querySelectorAll('main > article');
+            secciones.forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+
+            const seccionSeleccionada = document.getElementById(seccion);
+            seccionSeleccionada.style.display = 'block';
+        }
+
+        function mostrarSubseccion(subseccion) {
+            const subsecciones = document.querySelectorAll('#secciones > div');
+            subsecciones.forEach(subseccion => {
+                subseccion.style.display = 'none';
+            });
+
+            const subseccionSeleccionada = document.getElementById(subseccion);
+            subseccionSeleccionada.style.display = 'block';
+        }
+    </script>
+        
+</body>
+</html>
+
+
